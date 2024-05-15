@@ -12,6 +12,10 @@ public class IntegerToRoman {
         String[] decine = {"","X","XX","XXX","XL","L","LX","LXX","LXXX","XC"};
         String[] unita = {"","I","II","III","IV","V","VI","VII","VIII","IX"};
 
+        if(number<0 || number>1000){
+            return "";
+        }
+
         if(number==1000){
             return "M";
         }
