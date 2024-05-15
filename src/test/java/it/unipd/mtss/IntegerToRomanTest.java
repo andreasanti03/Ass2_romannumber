@@ -6,9 +6,21 @@
 package it.unipd.mtss;
 
 import org.junit.Test;
+import org.junit.After;
 import static org.junit.Assert.assertEquals;
 
 public class IntegerToRomanTest {
+
+    @After
+    public void evaluateRange(){
+        assertEquals("", IntegerToRoman.convert(-2));
+        assertEquals("", IntegerToRoman.convert(-1));
+        assertEquals("", IntegerToRoman.convert(1001));
+        assertEquals("", IntegerToRoman.convert(1100));
+        assertEquals("", IntegerToRoman.convert(10028122));
+    }
+
+
     @Test
     public void evaluatePrimiTre(){
         String variabileOne = "I";
