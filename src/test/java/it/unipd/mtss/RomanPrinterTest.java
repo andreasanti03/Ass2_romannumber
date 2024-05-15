@@ -82,4 +82,38 @@ public class RomanPrinterTest {
         assertEquals(var9, RomanPrinter.print(9));
         assertEquals(var10, RomanPrinter.print(10));
     }
+
+    @Ignore
+    public void checkPrintPrimiVenti(){
+        String var13 = "__  __  ___   ___   ___  \n" +
+                "\\ \\/ / |_ _| |_ _| |_ _| \n" +
+                " \\  /   | |   | |   | |  \n" +
+                " /  \\   | |   | |   | |  \n" +
+                "/_/\\_\\ |___| |___| |___| \n";
+        String var15 = "__  __ __     __ \n" +
+                "\\ \\/ / \\ \\   / / \n" +
+                " \\  /   \\ \\ / /  \n" +
+                " /  \\    \\ V /   \n" +
+                "/_/\\_\\    \\_/    \n";
+        String var17 = "__  __ __     __  ___   ___  \n" +
+                "\\ \\/ / \\ \\   / / |_ _| |_ _| \n" +
+                " \\  /   \\ \\ / /   | |   | |  \n" +
+                " /  \\    \\ V /    | |   | |  \n" +
+                "/_/\\_\\    \\_/    |___| |___| \n";
+        String var19 = "__  __  ___  __  __ \n" +
+                "\\ \\/ / |_ _| \\ \\/ / \n" +
+                " \\  /   | |   \\  /  \n" +
+                " /  \\   | |   /  \\  \n" +
+                "/_/\\_\\ |___| /_/\\_\\ \n";
+        String var20 = "__  __ __  __ \n" +
+                "\\ \\/ / \\ \\/ / \n" +
+                " \\  /   \\  /  \n" +
+                " /  \\   /  \\  \n" +
+                "/_/\\_\\ /_/\\_\\ \n";
+        assertEquals(var13, RomanPrinter.print(13));
+        assertEquals(var15, RomanPrinter.print(15));
+        assertEquals(var17, RomanPrinter.print(17));
+        assertEquals(var19, RomanPrinter.print(19));
+        assertEquals(var20, RomanPrinter.print(20));
+    }
 }
