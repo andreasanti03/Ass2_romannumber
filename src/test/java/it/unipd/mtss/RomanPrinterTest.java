@@ -4,12 +4,12 @@
 ////////////////////////////////////////////////////////////////////
 package it.unipd.mtss;
 
-import org.junit.Ignore;
+import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
 public class RomanPrinterTest {
-    @Ignore
+    @Test
     public void checkPrintPrimiTre(){
         String var1 = " ___  \n" +
                 "|_ _| \n" +
@@ -31,7 +31,7 @@ public class RomanPrinterTest {
         assertEquals(var3, RomanPrinter.print(3));
     }
 
-    @Ignore
+    @Test
     public void checkPrintPrimiSei(){
         String var4 = " ___  __     __ \n" +
                 "|_ _| \\ \\   / / \n" +
@@ -53,7 +53,7 @@ public class RomanPrinterTest {
         assertEquals(var6, RomanPrinter.print(6));
     }
 
-    @Ignore
+    @Test
     public void checkPrintPrimiDieci(){
         String var7 = "__     __  ___   ___  \n" +
                 "\\ \\   / / |_ _| |_ _| \n" +
@@ -81,7 +81,7 @@ public class RomanPrinterTest {
         assertEquals(var10, RomanPrinter.print(10));
     }
 
-    @Ignore
+    @Test
     public void checkPrintPrimiVenti(){
         String var13 = "__  __  ___   ___   ___  \n" +
                 "\\ \\/ / |_ _| |_ _| |_ _| \n" +
@@ -115,7 +115,7 @@ public class RomanPrinterTest {
         assertEquals(var20, RomanPrinter.print(20));
     }
 
-    @Ignore
+    @Test
     public void checkPrintPrimiCinquanta(){
         String var21 = "__  __ __  __  ___  \n" +
                 "\\ \\/ / \\ \\/ / |_ _| \n" +
@@ -162,7 +162,7 @@ public class RomanPrinterTest {
         assertEquals(var50, RomanPrinter.print(50));
     }
 
-    @Ignore
+    @Test
     public void checkPrintPrimiCento() {
         String var51 =" _       ___  \n" +
                 "| |     |_ _| \n" +
@@ -228,7 +228,7 @@ public class RomanPrinterTest {
 
     }
 
-    @Ignore
+    @Test
     public void checkPrintPrimiCinquecento() {
         String var101 = "  ____   ___  \n" +
                 " / ___| |_ _| \n" +
@@ -311,7 +311,7 @@ public class RomanPrinterTest {
         assertEquals(var477, RomanPrinter.print(477));
     }
 
-    @Ignore
+    @Test
     public void checkPrintPrimiMille() {
         String var501 = " ____    ___  \n" +
                 "|  _ \\  |_ _| \n" +
